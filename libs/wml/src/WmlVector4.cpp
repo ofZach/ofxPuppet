@@ -8,6 +8,8 @@
 // and may not be copied or disclosed except in accordance with the terms of
 // that agreement.
 
+#include <string.h>
+#include <assert.h>
 #include "WmlVector4.h"
 namespace Wml
 {

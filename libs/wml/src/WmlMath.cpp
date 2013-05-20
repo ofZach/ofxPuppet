@@ -9,6 +9,10 @@
 // that agreement.
 
 #include "WmlMath.h"
+#include <float.h>
+#include <math.h>
+#include <random>
+
 using namespace Wml;
 
 #define WML_INSTANTIATE_BEFORE

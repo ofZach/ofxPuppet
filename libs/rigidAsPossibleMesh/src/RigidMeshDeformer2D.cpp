@@ -175,7 +175,7 @@ void RigidMeshDeformer2D::InitializeFromMesh( ofMesh * pMesh )
 			ofPoint v2test(v0 + fX * v01 + fY * v01Rot90);
 			float fLength = (v2test - v2).length();
 			if ( fLength > 0.001f )
-				DebugBreak();
+				Debugbreak();
 			
 			t.vTriCoords[j].x= fX;
 			t.vTriCoords[j].y= fY;
@@ -346,10 +346,10 @@ void RigidMeshDeformer2D::PrecomputeFittingMatrices()
 			continue;
 		m_vVertexMap[i] = nRow++;
 	}
-	if ( nRow != nFreeVerts )	DebugBreak();
+	if ( nRow != nFreeVerts )	Debugbreak();
 	for ( unsigned int i = 0 ; i < nConstraints; ++i )
 		m_vVertexMap[vConstraintsVec[i].nVertex ] = nRow++;
-	if ( nRow != nVerts )	DebugBreak();		// bad!
+	if ( nRow != nVerts )	Debugbreak();		// bad!
 	
 	
 	// test vector...
@@ -596,10 +596,10 @@ void RigidMeshDeformer2D::PrecomputeOrientationMatrix()
 			continue;
 		m_vVertexMap[i] = nRow++;
 	}
-	if ( nRow != nFreeVerts )	DebugBreak();
+	if ( nRow != nFreeVerts )	Debugbreak();
 	for ( unsigned int i = 0 ; i < nConstraints; ++i )
 		m_vVertexMap[vConstraintsVec[i].nVertex ] = nRow++;
-	if ( nRow != nVerts )	DebugBreak();		// bad!
+	if ( nRow != nVerts )	Debugbreak();		// bad!
 	
 	
 	// test vector...
@@ -792,7 +792,7 @@ void AccumScaleEntry( Wml::GMatrixd & mF, int nRow, int nCol, double fAccum )
 	if ( nRow < 4 && nCol < 4 ) {
 		mF[nRow][nCol] += fAccum;
 	} else {
-		DebugBreak();
+		Debugbreak();
 	}
 }
 
@@ -869,7 +869,7 @@ void RigidMeshDeformer2D::PrecomputeScalingMatrices( unsigned int nTriangle )
 	
     mFInverse *= -1.0;
 	if (!bResult) {
-		DebugBreak();
+		Debugbreak();
 	}
 	t.mF =  mFInverse;
 	

@@ -8,7 +8,9 @@
 // and may not be copied or disclosed except in accordance with the terms of
 // that agreement.
 
+#include <assert.h>
 #include "WmlBox2.h"
+
 using namespace Wml;
 
 //----------------------------------------------------------------------------

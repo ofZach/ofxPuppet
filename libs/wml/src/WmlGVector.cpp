@@ -9,6 +9,9 @@
 // that agreement.
 
 #include "WmlGVector.h"
+#include <string.h>
+#include <assert.h>
+
 using namespace Wml;
 
 //----------------------------------------------------------------------------

@@ -1,3 +1,5 @@
+#include <assert.h>
+
 #include "WmlExtTriangleUtils.h"
 
 #include <limits>
