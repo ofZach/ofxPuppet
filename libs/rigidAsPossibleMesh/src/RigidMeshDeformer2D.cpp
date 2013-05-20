@@ -866,7 +866,8 @@ void RigidMeshDeformer2D::PrecomputeScalingMatrices( unsigned int nTriangle )
 	// ok, now invert F
 	Wml::GMatrixd mFInverse(4,4);
 	bool bResult = Wml::LinearSystemd::Inverse(t.mF, mFInverse);
-	mFInverse *= -1.0;
+	
+    mFInverse *= -1.0;
 	if (!bResult) {
 		DebugBreak();
 	}

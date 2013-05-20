@@ -40,6 +40,7 @@ bool LinearSystemExt<Real>::LUDecompose( Wml::GMatrix<Real> & mMatrix, LUData & 
 
 	int niMax = 0;
 	for ( int j = 0; j < nRows; ++j ) {		// loop over columns (Crout's method)
+
 		// not entirely sure 
 		for ( int i = 0; i < j; ++i ) {
 			Real dSum = mLUMatrix[i][j];

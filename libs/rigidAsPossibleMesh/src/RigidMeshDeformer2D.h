@@ -10,7 +10,6 @@
 #include <WmlBox2.h>
 #include <WmlGMatrix.h>
 #include "WmlLinearSystemExt.h"
-
 #include "ofMain.h"
 #include "opencv2/opencv.hpp"
 
