@@ -5,12 +5,7 @@
 void ofxPuppet::setup(ofMesh & mesh){
 	mesh.setMode(OF_PRIMITIVE_TRIANGLES);	
 	originalMesh = mesh, deformedMesh = mesh;
-	InitializeDeformedMesh();
-}
-
-void ofxPuppet::InitializeDeformedMesh() {
 	deformedMesh.clear();
-	
 	unsigned int nVerts = originalMesh.getVertices().size();
 	
 	for ( unsigned int i = 0; i < nVerts; ++i ) {
@@ -25,23 +20,11 @@ void ofxPuppet::InitializeDeformedMesh() {
 	}
 	
 	deformer.InitializeFromMesh( &originalMesh );
-	InvalidateConstraints();
+	needsUpdating = false; 
 }
 
-void ofxPuppet::UpdateDeformedMesh() 
-{
-	ValidateConstraints();
-	deformer.UpdateDeformedMesh( &deformedMesh, true );
-	vector < ofVec3f > vert = deformedMesh.getVertices();
-}
-
-void ofxPuppet::InvalidateConstraints() 
-{ 
-	bConstraintsValid = false; 
-}
-
-void ofxPuppet::ValidateConstraints() {
-	if(!bConstraintsValid) {
+void ofxPuppet::update(){
+	if(!needsUpdating) {
 		int nConstraints = controlPoints.size();
 		set<unsigned int>::iterator cur(controlPoints.begin()), end(controlPoints.end());
 		while ( cur != end ) {
@@ -54,12 +37,10 @@ void ofxPuppet::ValidateConstraints() {
 		
 		deformer.ForceValidation();
 		
-		bConstraintsValid = true;
+		needsUpdating = true;
 	}
-}
-
-void ofxPuppet::update(){
-	UpdateDeformedMesh();
+	deformer.UpdateDeformedMesh( &deformedMesh, true );
+	vector < ofVec3f > vert = deformedMesh.getVertices();
 }
 
 void ofxPuppet::draw(){	
@@ -79,13 +60,13 @@ void ofxPuppet::setControlPoint(int i, const ofVec2f& position) {
 		controlPoints.insert(i);
 	}
 	deformedMesh.getVertices()[i].set(position.x, position.y);
-	InvalidateConstraints();
+	needsUpdating = false; 
 }
 
 void ofxPuppet::removeControlPoint(int i) {
 	controlPoints.erase(i);
 	deformer.RemoveHandle(i);
-	InvalidateConstraints();
+	needsUpdating = false; 
 }
 
 ofMesh& ofxPuppet::getDeformedMesh() {

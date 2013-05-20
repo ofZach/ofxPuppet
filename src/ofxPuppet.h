@@ -8,14 +8,9 @@ class ofxPuppet {
 protected:
 	ofMesh originalMesh, deformedMesh;
 	rmsmesh::RigidMeshDeformer2D deformer;
-	bool bConstraintsValid;
+	bool needsUpdating;
 	set<unsigned int> controlPoints;
 	int nSelected;
-	
-	void InitializeDeformedMesh();
-	void UpdateDeformedMesh();
-	void InvalidateConstraints();
-	void ValidateConstraints();
 	
 public: 
 	void setup(ofMesh & mesh);
