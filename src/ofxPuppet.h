@@ -8,16 +8,15 @@
 class ofxPuppet {
 public: 
 	
-	void setOrigMesh(ofMesh & mesh);
-	void createSquareMesh( ofRectangle square, int nHoriz, int nVert);
+	void setMesh(ofMesh & mesh);
 	
 	void update();
 	void draw();
+	void drawWireframe();
 	 
 	void setVertex(int i, const ofVec2f& position);
 	
-	ofMesh origMesh;
-	ofMesh deformedMesh;
+	ofMesh origMesh, deformedMesh;
 	rmsmesh::RigidMeshDeformer2D deformer;
 	bool bConstraintsValid;
 	std::set<unsigned int> vSelected;

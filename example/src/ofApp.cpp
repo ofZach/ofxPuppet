@@ -2,7 +2,32 @@
 
 void ofApp::setup(){
 	ofSetVerticalSync(true);
-	puppet.createSquareMesh(ofRectangle(50,50,600,600), 10, 10);
+	ofRectangle square(50,50,600,600);
+	int nHoriz = 10, nVert = 10;
+	
+	ofMesh mesh;
+	mesh.setMode(OF_PRIMITIVE_TRIANGLES);
+	for (int j = 0; j < nVert; j++){
+    for (int i = 0; i < nHoriz; i++){
+			float x = ofMap(i, 0, nHoriz-1, square.x, square.x + square.width);
+			float y = ofMap(j, 0, nVert-1, square.y, square.y + square.height);
+			mesh.addVertex(ofPoint(x,y));
+		}
+	}
+	for ( unsigned int y = 0; y < (nVert-1); y++ ) {
+		for ( unsigned int x = 0; x < nHoriz-1; x++ ) {
+			unsigned int nRow1 = y * nHoriz;
+			unsigned int nRow2 = (y+1) * nHoriz;
+			mesh.addIndex(nRow1 + x);
+			mesh.addIndex(nRow2 + x + 1);
+			mesh.addIndex(nRow1 + x + 1);
+			mesh.addIndex(nRow1 + x);
+			mesh.addIndex(nRow2 + x);
+			mesh.addIndex(nRow2 + x + 1);
+		}
+	}
+	
+	puppet.setMesh(mesh);
 }
 
 void ofApp::update(){
@@ -10,7 +35,9 @@ void ofApp::update(){
 }
 
 void ofApp::draw(){
-	puppet.draw();
+	ofBackground(0);
+	ofSetColor(255);
+	puppet.drawWireframe();
 }
 
 void  ofApp::mouseDragged(int x, int y, int button){
