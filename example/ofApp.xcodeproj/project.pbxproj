@@ -26,6 +26,7 @@
 		27F91FA61749BD3000567ACF /* WmlVector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F941749BD3000567ACF /* WmlVector2.cpp */; };
 		27F91FA71749BD3000567ACF /* WmlVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F961749BD3000567ACF /* WmlVector3.cpp */; };
 		27F91FA81749BD3000567ACF /* WmlVector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F981749BD3000567ACF /* WmlVector4.cpp */; };
+		27F91FAA1749D3E700567ACF /* ofxPuppetInteractive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91FA91749D3E700567ACF /* ofxPuppetInteractive.cpp */; };
 		63020f16c7e8ded9801112417e67ad38 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = c6151136d101f857dae12722e3c42f4a /* ofxCvImage.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworks.a */; };
@@ -131,6 +132,8 @@
 		27F91F971749BD3000567ACF /* WmlVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector3.h; sourceTree = "<group>"; };
 		27F91F981749BD3000567ACF /* WmlVector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlVector4.cpp; sourceTree = "<group>"; };
 		27F91F991749BD3000567ACF /* WmlVector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector4.h; sourceTree = "<group>"; };
+		27F91FA91749D3E700567ACF /* ofxPuppetInteractive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPuppetInteractive.cpp; sourceTree = "<group>"; };
+		27F91FAB1749D3F700567ACF /* ofxPuppetInteractive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPuppetInteractive.h; sourceTree = "<group>"; };
 		2e411f99e3ab7154484b4f96165f5cff /* kmeans_index.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kmeans_index.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kmeans_index.h; sourceTree = SOURCE_ROOT; };
 		30884ecd9c171ab1b1bdfc3f6449c692 /* cv.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cv.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/cv.hpp; sourceTree = SOURCE_ROOT; };
 		319268d200f1ba567e4ccff97a1babd8 /* cxeigen.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cxeigen.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxeigen.hpp; sourceTree = SOURCE_ROOT; };
@@ -191,7 +194,7 @@
 		E4B69B5B0A3A1756003C02F2 /* ofAppDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofAppDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -380,6 +383,8 @@
 			children = (
 				2745E4E01749BA6D00A2F3A3 /* ofxPuppet.cpp */,
 				2745E4E11749BA6D00A2F3A3 /* ofxPuppet.h */,
+				27F91FA91749D3E700567ACF /* ofxPuppetInteractive.cpp */,
+				27F91FAB1749D3F700567ACF /* ofxPuppetInteractive.h */,
 			);
 			name = src;
 			path = ../src;
@@ -828,6 +833,7 @@
 				27F91FA61749BD3000567ACF /* WmlVector2.cpp in Sources */,
 				27F91FA71749BD3000567ACF /* WmlVector3.cpp in Sources */,
 				27F91FA81749BD3000567ACF /* WmlVector4.cpp in Sources */,
+				27F91FAA1749D3E700567ACF /* ofxPuppetInteractive.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

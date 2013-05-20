@@ -17,8 +17,10 @@ public:
 	
 	void setup(ofMesh & mesh);
 	void update();
-	void draw();
+	
+	void drawFaces();
 	void drawWireframe();
+	void drawControlPoints();
 	
 	void setControlPoint(int i);
 	void setControlPoint(int i, const ofVec2f& position);

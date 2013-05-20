@@ -5,7 +5,6 @@
 ofxPuppet::ofxPuppet()
 :needsUpdating(false)
 ,nSelected(0) {
-
 }
 
 void ofxPuppet::setup(ofMesh & mesh){
@@ -26,7 +25,7 @@ void ofxPuppet::setup(ofMesh & mesh){
 	}
 	
 	deformer.InitializeFromMesh( &originalMesh );
-	needsUpdating = true; 
+	needsUpdating = true;
 }
 
 void ofxPuppet::update(){
@@ -35,9 +34,7 @@ void ofxPuppet::update(){
 		set<unsigned int>::iterator cur(controlPoints.begin()), end(controlPoints.end());
 		while ( cur != end ) {
 			unsigned int nVertex = *cur++;
-			ofVec3f vVertex;
-			
-			vVertex = deformedMesh.getVertices()[nVertex]; //( nVertex, vVertex);
+			ofVec3f vVertex = deformedMesh.getVertices()[nVertex];
 			deformer.SetDeformedHandle( nVertex, ofVec2f( vVertex.x, vVertex.y ) );
 		}
 		deformer.ForceValidation();
@@ -47,12 +44,22 @@ void ofxPuppet::update(){
 	vector < ofVec3f > vert = deformedMesh.getVertices();
 }
 
-void ofxPuppet::draw(){	
-	deformedMesh.draw();
+void ofxPuppet::drawFaces(){	
+	deformedMesh.drawFaces();
 }
 
 void ofxPuppet::drawWireframe() {
 	deformedMesh.drawWireframe();
+}
+
+void ofxPuppet::drawControlPoints() {
+	ofPushStyle();
+	ofNoFill();
+	ofSetColor(ofColor::red);
+	for(set<unsigned int>::iterator itr = controlPoints.begin(); itr != controlPoints.end(); itr++) {
+		ofCircle(deformedMesh.getVertex(*itr), 5); 
+	}
+	ofPopStyle();
 }
 
 void ofxPuppet::setControlPoint(int i) {
