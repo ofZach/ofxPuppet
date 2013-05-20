@@ -65,7 +65,10 @@ void ofxPuppet::removeControlPoint(int i) {
 	needsUpdating = true; 
 }
 
+ofMesh& ofxPuppet::getOriginalMesh() {
+	return originalMesh;
+}
+
 ofMesh& ofxPuppet::getDeformedMesh() {
 	return deformedMesh;
 }
-
