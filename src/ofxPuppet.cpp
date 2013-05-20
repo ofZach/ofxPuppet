@@ -2,6 +2,12 @@
 
 #define WML_INSTANTIATE_BEFORE
 
+ofxPuppet::ofxPuppet()
+:needsUpdating(false)
+,nSelected(0) {
+
+}
+
 void ofxPuppet::setup(ofMesh & mesh){
 	mesh.setMode(OF_PRIMITIVE_TRIANGLES);	
 	originalMesh = mesh, deformedMesh = mesh;
@@ -20,11 +26,11 @@ void ofxPuppet::setup(ofMesh & mesh){
 	}
 	
 	deformer.InitializeFromMesh( &originalMesh );
-	needsUpdating = false; 
+	needsUpdating = true; 
 }
 
 void ofxPuppet::update(){
-	if(!needsUpdating) {
+	if(needsUpdating) {
 		int nConstraints = controlPoints.size();
 		set<unsigned int>::iterator cur(controlPoints.begin()), end(controlPoints.end());
 		while ( cur != end ) {
@@ -34,10 +40,8 @@ void ofxPuppet::update(){
 			vVertex = deformedMesh.getVertices()[nVertex]; //( nVertex, vVertex);
 			deformer.SetDeformedHandle( nVertex, ofVec2f( vVertex.x, vVertex.y ) );
 		}
-		
 		deformer.ForceValidation();
-		
-		needsUpdating = true;
+		needsUpdating = false;
 	}
 	deformer.UpdateDeformedMesh( &deformedMesh, true );
 	vector < ofVec3f > vert = deformedMesh.getVertices();
@@ -60,13 +64,13 @@ void ofxPuppet::setControlPoint(int i, const ofVec2f& position) {
 		controlPoints.insert(i);
 	}
 	deformedMesh.getVertices()[i].set(position.x, position.y);
-	needsUpdating = false; 
+	needsUpdating = true; 
 }
 
 void ofxPuppet::removeControlPoint(int i) {
 	controlPoints.erase(i);
 	deformer.RemoveHandle(i);
-	needsUpdating = false; 
+	needsUpdating = true; 
 }
 
 ofMesh& ofxPuppet::getDeformedMesh() {

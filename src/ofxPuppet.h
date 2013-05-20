@@ -13,6 +13,8 @@ protected:
 	int nSelected;
 	
 public: 
+	ofxPuppet();
+	
 	void setup(ofMesh & mesh);
 	void update();
 	void draw();
