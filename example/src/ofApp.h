@@ -16,5 +16,5 @@ public:
 	ofxPuppet puppet;
 	int selectedVertex;
 	bool selected;
-	set<int> selectedVertices;
+	set<unsigned int> selectedVertices;
 };

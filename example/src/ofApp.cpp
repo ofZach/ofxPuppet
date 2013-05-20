@@ -12,13 +12,7 @@ float getNearestVertex(const ofMesh& mesh, const ofVec2f& target, int& vertexInd
 	return bestDistance;
 }
 
-void ofApp::setup(){
-	ofSetVerticalSync(true);
-	
-	selected = false;
-	
-	ofRectangle square(50,50,600,600);
-	int nHoriz = 10, nVert = 10;
+ofMesh makeGrid(ofRectangle square, int nHoriz, int nVert) {
 	ofMesh mesh;
 	mesh.setMode(OF_PRIMITIVE_TRIANGLES);
 	for (int j = 0; j < nVert; j++){
@@ -40,8 +34,17 @@ void ofApp::setup(){
 			mesh.addIndex(nRow2 + x + 1);
 		}
 	}
-	
+	return mesh;
+}
+
+void ofApp::setup(){
+	ofSetVerticalSync(true);
+	selected = false;
+	ofMesh mesh = makeGrid(ofRectangle(100,100,600,600), 10, 10);
 	puppet.setup(mesh);
+	
+	puppet.setControlPoint(0); selectedVertices.insert(0);
+	puppet.setControlPoint(9); selectedVertices.insert(9);
 }
 
 void ofApp::update(){
@@ -54,7 +57,8 @@ void ofApp::draw(){
 	puppet.drawWireframe();
 	
 	ofNoFill();
-	for(set<int>::iterator itr = selectedVertices.begin(); itr != selectedVertices.end(); itr++) {
+	ofSetColor(ofColor::red);
+	for(set<unsigned int>::iterator itr = selectedVertices.begin(); itr != selectedVertices.end(); itr++) {
 		ofVec2f cur = puppet.getDeformedMesh().getVertex(*itr);
 		ofCircle(cur, 5); 
 	}
@@ -69,7 +73,7 @@ void  ofApp::mousePressed(int x, int y, int button){
 		} else if(button == 2) {
 			if(selectedVertices.find(selectedVertex) != selectedVertices.end()) {
 				selectedVertices.erase(selectedVertex);
-				puppet.removeVertex(selectedVertex);
+				puppet.removeControlPoint(selectedVertex);
 			}
 		}
 	} else {
@@ -79,7 +83,7 @@ void  ofApp::mousePressed(int x, int y, int button){
 
 void  ofApp::mouseDragged(int x, int y, int button){
 	if(selected) {
-		puppet.setVertex(selectedVertex, ofVec2f(x, y));
+		puppet.setControlPoint(selectedVertex, ofVec2f(x, y));
 	}
 }
 
