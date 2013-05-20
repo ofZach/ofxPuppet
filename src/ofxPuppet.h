@@ -1,26 +1,26 @@
 #pragma once
 
-#include "ofMain.h" 
-#include <Set>
+#include "ofMain.h"
 #define WML_INSTANTIATE_BEFORE
 #include "RigidMeshDeformer2D.h"
 
 class ofxPuppet {
-public: 
+protected:
+	ofMesh origMesh, deformedMesh;
+	rmsmesh::RigidMeshDeformer2D deformer;
+	bool bConstraintsValid;
+	set<unsigned int> vSelected;
+	int nSelected;
 	
-	void setMesh(ofMesh & mesh);
+public: 
+	void setup(ofMesh & mesh);
 	
 	void update();
 	void draw();
 	void drawWireframe();
 	 
 	void setVertex(int i, const ofVec2f& position);
-	
-	ofMesh origMesh, deformedMesh;
-	rmsmesh::RigidMeshDeformer2D deformer;
-	bool bConstraintsValid;
-	std::set<unsigned int> vSelected;
-	int nSelected;
+	ofMesh& getDeformedMesh();
 	
 	void InitializeDeformedMesh();
 	void UpdateDeformedMesh();
@@ -28,9 +28,7 @@ public:
 	void ValidateConstraints();
 	unsigned int FindHitVertex( float nX, float nY );
 	
-	void mouseDragged(int x, int y, int button);
 	void mousePressed(int x, int y, int button);
-	void mouseReleased(int x, int y, int button);
 };
 
 

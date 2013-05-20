@@ -9,9 +9,12 @@ public:
 	void update();
 	void draw();
 	
-	void mouseDragged(int x, int y, int button);
 	void mousePressed(int x, int y, int button);
+	void mouseDragged(int x, int y, int button);
 	void mouseReleased(int x, int y, int button);
 	
 	ofxPuppet puppet;
+	int selectedVertex;
+	bool selected;
+	set<int> selectedVertices;
 };

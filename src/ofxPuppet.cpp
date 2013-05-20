@@ -1,9 +1,8 @@
 #include "ofxPuppet.h"
 
 #define WML_INSTANTIATE_BEFORE
-#include "RigidMeshDeformer2D.h"
 
-void ofxPuppet::setMesh(ofMesh & mesh){
+void ofxPuppet::setup(ofMesh & mesh){
 	origMesh.clear();
 	origMesh.setMode(OF_PRIMITIVE_TRIANGLES);
 	deformedMesh.setMode(OF_PRIMITIVE_TRIANGLES);
@@ -132,11 +131,8 @@ void ofxPuppet::setVertex(int i, const ofVec2f& position) {
 	InvalidateConstraints();
 }
 
-//--------------------------------------------------------------
-void  ofxPuppet::mouseDragged(int x, int y, int button){
-	if ( nSelected != std::numeric_limits<unsigned int>::max() ) {
-		setVertex(nSelected, ofVec2f(x, y));
-	}
+ofMesh& ofxPuppet::getDeformedMesh() {
+	return deformedMesh;
 }
 
 //--------------------------------------------------------------
@@ -164,13 +160,4 @@ void  ofxPuppet::mousePressed(int x, int y, int button){
 			//glutPostRedisplay();
 		}
 	}
-}
-
-//--------------------------------------------------------------
-void  ofxPuppet::mouseReleased(int x, int y, int button){
-	
-	if ( button == 0 ) {
-		nSelected = std::numeric_limits<unsigned int>::max();
-	} 
-	
 }
