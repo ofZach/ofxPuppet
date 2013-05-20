@@ -10,20 +10,6 @@ ofxPuppet::ofxPuppet()
 void ofxPuppet::setup(ofMesh & mesh){
 	mesh.setMode(OF_PRIMITIVE_TRIANGLES);	
 	originalMesh = mesh, deformedMesh = mesh;
-	deformedMesh.clear();
-	unsigned int nVerts = originalMesh.getVertices().size();
-	
-	for ( unsigned int i = 0; i < nVerts; ++i ) {
-		ofVec2f vVertex(0,0);
-		vVertex = originalMesh.getVertices()[i];
-		deformedMesh.addVertex(vVertex);
-	}
-	
-	for ( unsigned int i = 0; i < originalMesh.getIndices().size(); ++i ) {
-		int index = originalMesh.getIndices()[i];
-		deformedMesh.addIndex(index);
-	}
-	
 	deformer.InitializeFromMesh( &originalMesh );
 	needsUpdating = true;
 }
@@ -41,7 +27,6 @@ void ofxPuppet::update(){
 		needsUpdating = false;
 	}
 	deformer.UpdateDeformedMesh( &deformedMesh, true );
-	vector < ofVec3f > vert = deformedMesh.getVertices();
 }
 
 void ofxPuppet::drawFaces(){	
