@@ -11,7 +11,7 @@
 #include "WmlMath.h"
 #include <float.h>
 #include <math.h>
-#include <random>
+#include <random.h>
 
 using namespace Wml;
 
