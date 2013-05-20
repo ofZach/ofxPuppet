@@ -186,7 +186,7 @@ void ofxPuppet::update(){
 
 void ofxPuppet::draw(){
 	ofSetColor(255, 200);
-	//deformedMesh.drawWireframe();
+	deformedMesh.drawWireframe();
 	
 	std::set<unsigned int>::iterator cur(vSelected.begin()), end(vSelected.end());
 	while ( cur != end ) {
