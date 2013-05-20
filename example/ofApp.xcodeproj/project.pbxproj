@@ -11,21 +11,21 @@
 		1d5f3298c2fa073628012944b1efde88 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = c76de5c29bdbd2caa1dd0021a7376220 /* ofxCvContourFinder.cpp */; };
 		250a95ba26587be85db0a353e6e1dea2 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ce9c7160245b19131dae61282ee6cb53 /* ofxCvColorImage.cpp */; };
 		2745E4F11749BA6D00A2F3A3 /* ofxPuppet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2745E4E01749BA6D00A2F3A3 /* ofxPuppet.cpp */; };
+		276E577C1749E63500FDBBA0 /* WmlBandedMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E57641749E63500FDBBA0 /* WmlBandedMatrix.cpp */; };
+		276E577D1749E63500FDBBA0 /* WmlBox2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E57661749E63500FDBBA0 /* WmlBox2.cpp */; };
+		276E577E1749E63500FDBBA0 /* WmlGMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E57681749E63500FDBBA0 /* WmlGMatrix.cpp */; };
+		276E577F1749E63500FDBBA0 /* WmlGVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E576A1749E63500FDBBA0 /* WmlGVector.cpp */; };
+		276E57801749E63500FDBBA0 /* WmlLinearSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E576C1749E63500FDBBA0 /* WmlLinearSystem.cpp */; };
+		276E57811749E63500FDBBA0 /* WmlMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E576E1749E63500FDBBA0 /* WmlMath.cpp */; };
+		276E57821749E63500FDBBA0 /* WmlMatrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E57721749E63500FDBBA0 /* WmlMatrix4.cpp */; };
+		276E57831749E63500FDBBA0 /* WmlVector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E57761749E63500FDBBA0 /* WmlVector2.cpp */; };
+		276E57841749E63500FDBBA0 /* WmlVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E57781749E63500FDBBA0 /* WmlVector3.cpp */; };
+		276E57851749E63500FDBBA0 /* WmlVector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 276E577A1749E63500FDBBA0 /* WmlVector4.cpp */; };
 		27F91F9A1749BD3000567ACF /* LinearAlgebra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F731749BD3000567ACF /* LinearAlgebra.cpp */; };
 		27F91F9B1749BD3000567ACF /* RigidMeshDeformer2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F751749BD3000567ACF /* RigidMeshDeformer2D.cpp */; };
 		27F91F9C1749BD3000567ACF /* TriangleMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F781749BD3000567ACF /* TriangleMesh.cpp */; };
 		27F91F9D1749BD3000567ACF /* WmlExtTriangleUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F7A1749BD3000567ACF /* WmlExtTriangleUtils.cpp */; };
 		27F91F9E1749BD3000567ACF /* WmlLinearSystemExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F7C1749BD3000567ACF /* WmlLinearSystemExt.cpp */; };
-		27F91F9F1749BD3000567ACF /* WmlBandedMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F821749BD3000567ACF /* WmlBandedMatrix.cpp */; };
-		27F91FA01749BD3000567ACF /* WmlBox2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F841749BD3000567ACF /* WmlBox2.cpp */; };
-		27F91FA11749BD3000567ACF /* WmlGMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F861749BD3000567ACF /* WmlGMatrix.cpp */; };
-		27F91FA21749BD3000567ACF /* WmlGVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F881749BD3000567ACF /* WmlGVector.cpp */; };
-		27F91FA31749BD3000567ACF /* WmlLinearSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F8A1749BD3000567ACF /* WmlLinearSystem.cpp */; };
-		27F91FA41749BD3000567ACF /* WmlMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F8C1749BD3000567ACF /* WmlMath.cpp */; };
-		27F91FA51749BD3000567ACF /* WmlMatrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F901749BD3000567ACF /* WmlMatrix4.cpp */; };
-		27F91FA61749BD3000567ACF /* WmlVector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F941749BD3000567ACF /* WmlVector2.cpp */; };
-		27F91FA71749BD3000567ACF /* WmlVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F961749BD3000567ACF /* WmlVector3.cpp */; };
-		27F91FA81749BD3000567ACF /* WmlVector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91F981749BD3000567ACF /* WmlVector4.cpp */; };
 		27F91FAA1749D3E700567ACF /* ofxPuppetInteractive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F91FA91749D3E700567ACF /* ofxPuppetInteractive.cpp */; };
 		63020f16c7e8ded9801112417e67ad38 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = c6151136d101f857dae12722e3c42f4a /* ofxCvImage.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
@@ -95,6 +95,32 @@
 		1e95efd35ed9c5d97f2f015ed292592d /* timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/timer.h; sourceTree = SOURCE_ROOT; };
 		2745E4E01749BA6D00A2F3A3 /* ofxPuppet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPuppet.cpp; sourceTree = "<group>"; };
 		2745E4E11749BA6D00A2F3A3 /* ofxPuppet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPuppet.h; sourceTree = "<group>"; };
+		276E57621749E63500FDBBA0 /* Wm3Vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wm3Vector2.inl; sourceTree = "<group>"; };
+		276E57631749E63500FDBBA0 /* Wm3Vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wm3Vector3.inl; sourceTree = "<group>"; };
+		276E57641749E63500FDBBA0 /* WmlBandedMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlBandedMatrix.cpp; sourceTree = "<group>"; };
+		276E57651749E63500FDBBA0 /* WmlBandedMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlBandedMatrix.h; sourceTree = "<group>"; };
+		276E57661749E63500FDBBA0 /* WmlBox2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlBox2.cpp; sourceTree = "<group>"; };
+		276E57671749E63500FDBBA0 /* WmlBox2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlBox2.h; sourceTree = "<group>"; };
+		276E57681749E63500FDBBA0 /* WmlGMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlGMatrix.cpp; sourceTree = "<group>"; };
+		276E57691749E63500FDBBA0 /* WmlGMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlGMatrix.h; sourceTree = "<group>"; };
+		276E576A1749E63500FDBBA0 /* WmlGVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlGVector.cpp; sourceTree = "<group>"; };
+		276E576B1749E63500FDBBA0 /* WmlGVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlGVector.h; sourceTree = "<group>"; };
+		276E576C1749E63500FDBBA0 /* WmlLinearSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlLinearSystem.cpp; sourceTree = "<group>"; };
+		276E576D1749E63500FDBBA0 /* WmlLinearSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlLinearSystem.h; sourceTree = "<group>"; };
+		276E576E1749E63500FDBBA0 /* WmlMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlMath.cpp; sourceTree = "<group>"; };
+		276E576F1749E63500FDBBA0 /* WmlMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlMath.h; sourceTree = "<group>"; };
+		276E57701749E63500FDBBA0 /* WmlMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlMatrix.h; sourceTree = "<group>"; };
+		276E57711749E63500FDBBA0 /* WmlMatrix.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WmlMatrix.inl; sourceTree = "<group>"; };
+		276E57721749E63500FDBBA0 /* WmlMatrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlMatrix4.cpp; sourceTree = "<group>"; };
+		276E57731749E63500FDBBA0 /* WmlMatrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlMatrix4.h; sourceTree = "<group>"; };
+		276E57741749E63500FDBBA0 /* WmlVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector.h; sourceTree = "<group>"; };
+		276E57751749E63500FDBBA0 /* WmlVector.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WmlVector.inl; sourceTree = "<group>"; };
+		276E57761749E63500FDBBA0 /* WmlVector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlVector2.cpp; sourceTree = "<group>"; };
+		276E57771749E63500FDBBA0 /* WmlVector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector2.h; sourceTree = "<group>"; };
+		276E57781749E63500FDBBA0 /* WmlVector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlVector3.cpp; sourceTree = "<group>"; };
+		276E57791749E63500FDBBA0 /* WmlVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector3.h; sourceTree = "<group>"; };
+		276E577A1749E63500FDBBA0 /* WmlVector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlVector4.cpp; sourceTree = "<group>"; };
+		276E577B1749E63500FDBBA0 /* WmlVector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector4.h; sourceTree = "<group>"; };
 		27F91F731749BD3000567ACF /* LinearAlgebra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearAlgebra.cpp; sourceTree = "<group>"; };
 		27F91F741749BD3000567ACF /* LinearAlgebra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearAlgebra.h; sourceTree = "<group>"; };
 		27F91F751749BD3000567ACF /* RigidMeshDeformer2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RigidMeshDeformer2D.cpp; sourceTree = "<group>"; };
@@ -106,32 +132,6 @@
 		27F91F7B1749BD3000567ACF /* WmlExtTriangleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlExtTriangleUtils.h; sourceTree = "<group>"; };
 		27F91F7C1749BD3000567ACF /* WmlLinearSystemExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlLinearSystemExt.cpp; sourceTree = "<group>"; };
 		27F91F7D1749BD3000567ACF /* WmlLinearSystemExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlLinearSystemExt.h; sourceTree = "<group>"; };
-		27F91F801749BD3000567ACF /* Wm3Vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wm3Vector2.inl; sourceTree = "<group>"; };
-		27F91F811749BD3000567ACF /* Wm3Vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wm3Vector3.inl; sourceTree = "<group>"; };
-		27F91F821749BD3000567ACF /* WmlBandedMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlBandedMatrix.cpp; sourceTree = "<group>"; };
-		27F91F831749BD3000567ACF /* WmlBandedMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlBandedMatrix.h; sourceTree = "<group>"; };
-		27F91F841749BD3000567ACF /* WmlBox2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlBox2.cpp; sourceTree = "<group>"; };
-		27F91F851749BD3000567ACF /* WmlBox2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlBox2.h; sourceTree = "<group>"; };
-		27F91F861749BD3000567ACF /* WmlGMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlGMatrix.cpp; sourceTree = "<group>"; };
-		27F91F871749BD3000567ACF /* WmlGMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlGMatrix.h; sourceTree = "<group>"; };
-		27F91F881749BD3000567ACF /* WmlGVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlGVector.cpp; sourceTree = "<group>"; };
-		27F91F891749BD3000567ACF /* WmlGVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlGVector.h; sourceTree = "<group>"; };
-		27F91F8A1749BD3000567ACF /* WmlLinearSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlLinearSystem.cpp; sourceTree = "<group>"; };
-		27F91F8B1749BD3000567ACF /* WmlLinearSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlLinearSystem.h; sourceTree = "<group>"; };
-		27F91F8C1749BD3000567ACF /* WmlMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlMath.cpp; sourceTree = "<group>"; };
-		27F91F8D1749BD3000567ACF /* WmlMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlMath.h; sourceTree = "<group>"; };
-		27F91F8E1749BD3000567ACF /* WmlMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlMatrix.h; sourceTree = "<group>"; };
-		27F91F8F1749BD3000567ACF /* WmlMatrix.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WmlMatrix.inl; sourceTree = "<group>"; };
-		27F91F901749BD3000567ACF /* WmlMatrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlMatrix4.cpp; sourceTree = "<group>"; };
-		27F91F911749BD3000567ACF /* WmlMatrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlMatrix4.h; sourceTree = "<group>"; };
-		27F91F921749BD3000567ACF /* WmlVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector.h; sourceTree = "<group>"; };
-		27F91F931749BD3000567ACF /* WmlVector.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WmlVector.inl; sourceTree = "<group>"; };
-		27F91F941749BD3000567ACF /* WmlVector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlVector2.cpp; sourceTree = "<group>"; };
-		27F91F951749BD3000567ACF /* WmlVector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector2.h; sourceTree = "<group>"; };
-		27F91F961749BD3000567ACF /* WmlVector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlVector3.cpp; sourceTree = "<group>"; };
-		27F91F971749BD3000567ACF /* WmlVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector3.h; sourceTree = "<group>"; };
-		27F91F981749BD3000567ACF /* WmlVector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmlVector4.cpp; sourceTree = "<group>"; };
-		27F91F991749BD3000567ACF /* WmlVector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmlVector4.h; sourceTree = "<group>"; };
 		27F91FA91749D3E700567ACF /* ofxPuppetInteractive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPuppetInteractive.cpp; sourceTree = "<group>"; };
 		27F91FAB1749D3F700567ACF /* ofxPuppetInteractive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPuppetInteractive.h; sourceTree = "<group>"; };
 		2e411f99e3ab7154484b4f96165f5cff /* kmeans_index.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kmeans_index.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kmeans_index.h; sourceTree = SOURCE_ROOT; };
@@ -390,6 +390,39 @@
 			path = ../src;
 			sourceTree = "<group>";
 		};
+		276E57611749E63500FDBBA0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				276E57621749E63500FDBBA0 /* Wm3Vector2.inl */,
+				276E57631749E63500FDBBA0 /* Wm3Vector3.inl */,
+				276E57641749E63500FDBBA0 /* WmlBandedMatrix.cpp */,
+				276E57651749E63500FDBBA0 /* WmlBandedMatrix.h */,
+				276E57661749E63500FDBBA0 /* WmlBox2.cpp */,
+				276E57671749E63500FDBBA0 /* WmlBox2.h */,
+				276E57681749E63500FDBBA0 /* WmlGMatrix.cpp */,
+				276E57691749E63500FDBBA0 /* WmlGMatrix.h */,
+				276E576A1749E63500FDBBA0 /* WmlGVector.cpp */,
+				276E576B1749E63500FDBBA0 /* WmlGVector.h */,
+				276E576C1749E63500FDBBA0 /* WmlLinearSystem.cpp */,
+				276E576D1749E63500FDBBA0 /* WmlLinearSystem.h */,
+				276E576E1749E63500FDBBA0 /* WmlMath.cpp */,
+				276E576F1749E63500FDBBA0 /* WmlMath.h */,
+				276E57701749E63500FDBBA0 /* WmlMatrix.h */,
+				276E57711749E63500FDBBA0 /* WmlMatrix.inl */,
+				276E57721749E63500FDBBA0 /* WmlMatrix4.cpp */,
+				276E57731749E63500FDBBA0 /* WmlMatrix4.h */,
+				276E57741749E63500FDBBA0 /* WmlVector.h */,
+				276E57751749E63500FDBBA0 /* WmlVector.inl */,
+				276E57761749E63500FDBBA0 /* WmlVector2.cpp */,
+				276E57771749E63500FDBBA0 /* WmlVector2.h */,
+				276E57781749E63500FDBBA0 /* WmlVector3.cpp */,
+				276E57791749E63500FDBBA0 /* WmlVector3.h */,
+				276E577A1749E63500FDBBA0 /* WmlVector4.cpp */,
+				276E577B1749E63500FDBBA0 /* WmlVector4.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		27F91F701749BD3000567ACF /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,42 +462,9 @@
 		27F91F7E1749BD3000567ACF /* wml */ = {
 			isa = PBXGroup;
 			children = (
-				27F91F7F1749BD3000567ACF /* src */,
+				276E57611749E63500FDBBA0 /* src */,
 			);
 			path = wml;
-			sourceTree = "<group>";
-		};
-		27F91F7F1749BD3000567ACF /* src */ = {
-			isa = PBXGroup;
-			children = (
-				27F91F801749BD3000567ACF /* Wm3Vector2.inl */,
-				27F91F811749BD3000567ACF /* Wm3Vector3.inl */,
-				27F91F821749BD3000567ACF /* WmlBandedMatrix.cpp */,
-				27F91F831749BD3000567ACF /* WmlBandedMatrix.h */,
-				27F91F841749BD3000567ACF /* WmlBox2.cpp */,
-				27F91F851749BD3000567ACF /* WmlBox2.h */,
-				27F91F861749BD3000567ACF /* WmlGMatrix.cpp */,
-				27F91F871749BD3000567ACF /* WmlGMatrix.h */,
-				27F91F881749BD3000567ACF /* WmlGVector.cpp */,
-				27F91F891749BD3000567ACF /* WmlGVector.h */,
-				27F91F8A1749BD3000567ACF /* WmlLinearSystem.cpp */,
-				27F91F8B1749BD3000567ACF /* WmlLinearSystem.h */,
-				27F91F8C1749BD3000567ACF /* WmlMath.cpp */,
-				27F91F8D1749BD3000567ACF /* WmlMath.h */,
-				27F91F8E1749BD3000567ACF /* WmlMatrix.h */,
-				27F91F8F1749BD3000567ACF /* WmlMatrix.inl */,
-				27F91F901749BD3000567ACF /* WmlMatrix4.cpp */,
-				27F91F911749BD3000567ACF /* WmlMatrix4.h */,
-				27F91F921749BD3000567ACF /* WmlVector.h */,
-				27F91F931749BD3000567ACF /* WmlVector.inl */,
-				27F91F941749BD3000567ACF /* WmlVector2.cpp */,
-				27F91F951749BD3000567ACF /* WmlVector2.h */,
-				27F91F961749BD3000567ACF /* WmlVector3.cpp */,
-				27F91F971749BD3000567ACF /* WmlVector3.h */,
-				27F91F981749BD3000567ACF /* WmlVector4.cpp */,
-				27F91F991749BD3000567ACF /* WmlVector4.h */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 		3e44059dcbc2444d65660b9c94e00100 /* imgproc */ = {
@@ -823,17 +823,17 @@
 				27F91F9C1749BD3000567ACF /* TriangleMesh.cpp in Sources */,
 				27F91F9D1749BD3000567ACF /* WmlExtTriangleUtils.cpp in Sources */,
 				27F91F9E1749BD3000567ACF /* WmlLinearSystemExt.cpp in Sources */,
-				27F91F9F1749BD3000567ACF /* WmlBandedMatrix.cpp in Sources */,
-				27F91FA01749BD3000567ACF /* WmlBox2.cpp in Sources */,
-				27F91FA11749BD3000567ACF /* WmlGMatrix.cpp in Sources */,
-				27F91FA21749BD3000567ACF /* WmlGVector.cpp in Sources */,
-				27F91FA31749BD3000567ACF /* WmlLinearSystem.cpp in Sources */,
-				27F91FA41749BD3000567ACF /* WmlMath.cpp in Sources */,
-				27F91FA51749BD3000567ACF /* WmlMatrix4.cpp in Sources */,
-				27F91FA61749BD3000567ACF /* WmlVector2.cpp in Sources */,
-				27F91FA71749BD3000567ACF /* WmlVector3.cpp in Sources */,
-				27F91FA81749BD3000567ACF /* WmlVector4.cpp in Sources */,
 				27F91FAA1749D3E700567ACF /* ofxPuppetInteractive.cpp in Sources */,
+				276E577C1749E63500FDBBA0 /* WmlBandedMatrix.cpp in Sources */,
+				276E577D1749E63500FDBBA0 /* WmlBox2.cpp in Sources */,
+				276E577E1749E63500FDBBA0 /* WmlGMatrix.cpp in Sources */,
+				276E577F1749E63500FDBBA0 /* WmlGVector.cpp in Sources */,
+				276E57801749E63500FDBBA0 /* WmlLinearSystem.cpp in Sources */,
+				276E57811749E63500FDBBA0 /* WmlMath.cpp in Sources */,
+				276E57821749E63500FDBBA0 /* WmlMatrix4.cpp in Sources */,
+				276E57831749E63500FDBBA0 /* WmlVector2.cpp in Sources */,
+				276E57841749E63500FDBBA0 /* WmlVector3.cpp in Sources */,
+				276E57851749E63500FDBBA0 /* WmlVector4.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
