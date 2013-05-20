@@ -131,33 +131,12 @@ void ofxPuppet::setVertex(int i, const ofVec2f& position) {
 	InvalidateConstraints();
 }
 
+void ofxPuppet::removeVertex(int i) {
+	vSelected.erase(i);
+	deformer.RemoveHandle(i);
+}
+
 ofMesh& ofxPuppet::getDeformedMesh() {
 	return deformedMesh;
 }
 
-//--------------------------------------------------------------
-void  ofxPuppet::mousePressed(int x, int y, int button){
-	if ( button == 0 ) {
-		nSelected = FindHitVertex( (float)x, (float)(y) );
-		//cout << nSelected << endl;
-	}
-	
-	if ( button == 2) {
-		unsigned int nHit = FindHitVertex( (float)x, (float)(y) );
-		if ( nHit != std::numeric_limits<unsigned int>::max() ) {
-			if ( vSelected.find(nHit) == vSelected.end() )
-				vSelected.insert(nHit);
-			else {
-				vSelected.erase(nHit);
-				deformer.RemoveHandle(nHit);
-				
-				// restore position
-				ofVec3f vVertex;
-				vVertex = origMesh.getVertices()[nHit];
-				deformedMesh.getVertices()[nHit] = vVertex; //(nHit, vVertex);
-			}
-			InvalidateConstraints();
-			//glutPostRedisplay();
-		}
-	}
-}

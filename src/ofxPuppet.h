@@ -20,6 +20,7 @@ public:
 	void drawWireframe();
 	 
 	void setVertex(int i, const ofVec2f& position);
+	void removeVertex(int i);
 	ofMesh& getDeformedMesh();
 	
 	void InitializeDeformedMesh();
@@ -27,8 +28,6 @@ public:
 	void InvalidateConstraints();
 	void ValidateConstraints();
 	unsigned int FindHitVertex( float nX, float nY );
-	
-	void mousePressed(int x, int y, int button);
 };
 
 

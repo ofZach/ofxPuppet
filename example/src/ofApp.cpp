@@ -62,23 +62,19 @@ void ofApp::draw(){
 
 void  ofApp::mousePressed(int x, int y, int button){
 	float distance = getNearestVertex(puppet.getDeformedMesh(), ofVec2f(x, y), selectedVertex);
-	cout << "distance " << distance << endl;
 	if(distance < 10) {
-		if(button == 0) { // select
+		if(button == 0) {
 			selected = true;
 			selectedVertices.insert(selectedVertex);
-		} else if(button == 2) { // insert/erase
-			cout << "looking" << endl;
+		} else if(button == 2) {
 			if(selectedVertices.find(selectedVertex) != selectedVertices.end()) {
 				selectedVertices.erase(selectedVertex);
-				cout << "erasing" << endl;
+				puppet.removeVertex(selectedVertex);
 			}
 		}
 	} else {
 		selected = false;
 	}
-	
-	puppet.mousePressed(x, y, button);
 }
 
 void  ofApp::mouseDragged(int x, int y, int button){
