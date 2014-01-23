@@ -11,6 +11,7 @@
 #ifndef WM3VECTOR2_H
 #define WM3VECTOR2_H
 
+#include <assert.h>
 //#include "Wm3FoundationLIB.h"
 #include "WmlMath.h"
 

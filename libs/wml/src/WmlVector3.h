@@ -13,6 +13,7 @@
 
 //#include "Wm3FoundationLIB.h"
 #include "WmlMath.h"
+#include <assert.h>
 
 #define WM3_ITEM 
 

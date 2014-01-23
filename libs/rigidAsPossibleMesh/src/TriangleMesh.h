@@ -11,7 +11,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <strstream>
 #include <string>
 #include <vector>
 #include <float.h>
