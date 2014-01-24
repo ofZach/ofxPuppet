@@ -11,6 +11,8 @@ protected:
 	
 public:
 	ofxPuppetInteractive();
+    ofxPuppetInteractive(const ofxPuppetInteractive& other);
+	~ofxPuppetInteractive();
 	
 	void draw();
 	

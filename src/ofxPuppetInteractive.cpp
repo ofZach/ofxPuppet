@@ -6,6 +6,19 @@ ofxPuppetInteractive::ofxPuppetInteractive()
 	setEvents(true);
 }
 
+// copy constructor
+ofxPuppetInteractive::ofxPuppetInteractive(const ofxPuppetInteractive& other)
+: selected(other.selected), selectionRadius(other.selectionRadius),
+selectedVertex(other.selectedVertex), selectedVertices(other.selectedVertices)
+{
+    setEvents(true);
+}
+
+ofxPuppetInteractive::~ofxPuppetInteractive()
+{
+    setEvents(false);
+}
+
 float getNearestVertex(const ofMesh& mesh, const ofVec2f& target, int& vertexIndex) {
 	float bestDistance = 0;
 	for(int i = 0; i < mesh.getNumVertices(); i++) {
