@@ -3,6 +3,7 @@
 #include "rmsdebug.h"
 #include <limits>
 #include <WmlMath.h>
+#include <math.h>
 
 using namespace Wml;
 
