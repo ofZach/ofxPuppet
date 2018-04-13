@@ -8,6 +8,8 @@ Release*/
 *.app/
 *.pyc
 .svn/
+bin
+!bin/data
  
  
 #XCode
@@ -28,6 +30,11 @@ xcuserdata
 *.sdf
 *.opensdf
 *.suo
+*.pdb
+*.ilk
+*.aps
+*.VC.db
+*.VC.opendb
 ipch/
  
 #Eclipse
