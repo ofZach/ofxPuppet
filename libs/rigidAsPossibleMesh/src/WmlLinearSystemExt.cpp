@@ -2,6 +2,7 @@
 
 #include "rmsdebug.h"
 #include <limits>
+#include <algorithm>
 #include <WmlMath.h>
 #include <math.h>
 
